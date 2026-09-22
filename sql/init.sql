@@ -1,3 +1,4 @@
+SET NAMES 'utf8mb4';
 DROP TABLE IF EXISTS products;
 CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -5,7 +6,7 @@ CREATE TABLE products (
     brand VARCHAR(50) NOT NULL,
     price INT NOT NULL,
     old_price INT,
-    discount_label VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+    discount_label VARCHAR(50),
     image_url TEXT NOT NULL,
     ram VARCHAR(20),
     rom VARCHAR(20),
