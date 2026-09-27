@@ -59,7 +59,7 @@ services:
         tty: true
         ports:
             # - "${APP_PORT:-8283}:80"
-            - "8080:80"
+            - "80:80"
         depends_on:
             - app
         volumes:
